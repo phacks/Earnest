@@ -1,0 +1,55 @@
+{
+  "name": "Earnest",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --compilers js:babel-core/register --require ./test/setup.js 'test/**/*.@(js|jsx)'",
+    "test:watch": "npm run test -- --watch --watch-extensions jsx"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/phacks/Earnest.git"
+  },
+  "keywords": [],
+  "author": "nicolasgo@theodo.fr",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/phacks/Earnest/issues"
+  },
+  "homepage": "https://github.com/phacks/Earnest#readme",
+  "devDependencies": {
+    "babel-core": "^6.5.2",
+    "babel-loader": "^6.2.4",
+    "babel-preset-es2015": "^6.5.0",
+    "babel-preset-react": "^6.5.0",
+    "chai": "^3.5.0",
+    "chai-immutable": "^1.5.3",
+    "css-loader": "^0.23.1",
+    "jsdom": "^8.0.4",
+    "mocha": "^2.4.5",
+    "react-addons-test-utils": "15.3.2",
+    "react-hot-loader": "^1.3.0",
+    "style-loader": "^0.13.0",
+    "webpack": "^1.12.14",
+    "webpack-dev-server": "^1.14.1"
+  },
+  "babel": {
+    "presets": [
+      "es2015",
+      "react"
+    ]
+  },
+  "dependencies": {
+    "classnames": "2.2.5",
+    "immutable": "3.8.1",
+    "react": "15.3.2",
+    "react-addons-pure-render-mixin": "15.3.2",
+    "react-dom": "15.3.2",
+    "react-redux": "4.4.5",
+    "react-router": "^2.8.1",
+    "react-router-redux": "^4.0.6",
+    "redux": "3.6.0",
+    "tachyons": "^4.5.4"
+  }
+}
